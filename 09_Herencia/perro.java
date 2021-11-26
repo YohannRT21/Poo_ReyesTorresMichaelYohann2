@@ -1,50 +1,48 @@
 /*
-para poder aplicar la herencia de una clase, se utiliza la palabra reservada
-
+Para poder aplicar la herencia de una clase, se utiliza la palabra reservada
 extends
-
 Eso significa que la clase va a heredar de una clase padre
-
 Animal es la clase padre
 Perro es la clase hija
-*/
+*/ 
 
-
-public class perro extends animal{
+public class Perro extends Animal{
     /*
-    Aquí deberia de colocar cada atributo
+    Aqui deberia de colocar cada atributo
     nombre, raza, edad, tipo_alimento, sexo
     */
 
     String ladrido;
 
-    public perro(){
+    public Perro(){
         //constructor de la clase
     }
-    
+
     //sobrecarga para obtener y enviar el ladrido
-    public perro(String nombre, String raza, String tipo_alimento, int edad, boolean sexo, String ladrido){
+    public Perro(String nombre, String raza, String tipo_alimento, 
+    int edad, String ladrido){
         //para poder obtener los atributos por herencia
         //se debe de colocar super
-        super(nombre,raza,tipo_alimento, edad,sexo);
-        this.ladrido =ladrido;
+        super(nombre, raza, tipo_alimento, edad);
+        this.ladrido = ladrido;
+
     }
-    public String getladrido(){
+    public String getLadrido(){
         return ladrido;
     }
+
     //enviar
-    public void setladrido(String ladrido){
+    public void setLadrido(String ladrido){
         this.ladrido = ladrido;
     }
 
     //metodo para mostrar la informacion del perro
-    public void mostrarperro(){
-        System.out.println("El nombre del perro es: " +getnombre() +"\n"
-                            +"Su raza es: " +getraza ()+"\n"
-                            +"Se alimenta de: " +gettipo_alimento()+"\n"
-                            +"Tiene la edad de: " +getedad()+"\n"
-                            +"Su sexo es: " +getsexo()+"\n"
-                            +"Su ladrido es" + ladrido +"\n");
-
+    public void mostrarPerro(){
+        System.out.println("El nombre del perro es: " + getNombre() +"\n"
+                            + "Su raza es: " + getRaza() +"\n"
+                            + "Se alimenta de: " + getTipo_alimento() +"\n"
+                            + "Tiene la edad de: " + getEdad() +"\n"
+                            //+ "Su sexo es: " + getSexo() +"\n"
+                            + "Su ladrido es: " + ladrido  +"\n");
     }
 }

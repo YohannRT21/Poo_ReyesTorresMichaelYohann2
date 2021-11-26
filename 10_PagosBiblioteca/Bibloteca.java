@@ -29,10 +29,15 @@ public class Bibloteca {
 
 
     public void libros(){
-        //menu para el prestamo del libro
+        
+        drama dramas = new drama("yohann, reyes, torres, michael, 3, 20, 100");
+        
+        dramas.mostrarlibro();//menu para el prestamo del libro
 
         //agregar el try catch para el manejo de errores
         //identificar si son variables publicas o privadas para el manejo de los datos
+        
+
         String text;
         text = JOptionPane.showInputDialog("Elija la funcion que desea ejecutar: 3 \n 1.- prestamo del libro \n 2.- devolucion del libro");
         int opcion;

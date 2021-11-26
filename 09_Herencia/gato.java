@@ -1,50 +1,40 @@
-/*
-para poder aplicar la herencia de una clase, se utiliza la palabra reservada
-
-extends
-
-Eso significa que la clase va a heredar de una clase padre
-
-Animal es la clase padre
-Gato es la clase hija
-*/
-
-
-public class gato extends animal{
+public class Gato extends Animal{
     /*
-    Aquí deberia de colocar cada atributo
+    Aqui deberia de colocar cada atributo
     nombre, raza, edad, tipo_alimento, sexo
     */
 
     int num_vidas;
 
-    public gato(){
+    public Gato(){
         //constructor de la clase
     }
-    
+
     //sobrecarga para obtener y enviar el ladrido
-    public gato(String nombre, String raza, String tipo_alimento, int edad, boolean sexo, int num_vidas){
+    public Gato(String nombre, String raza, String tipo_alimento, 
+    int edad, int num_vidas){
         //para poder obtener los atributos por herencia
         //se debe de colocar super
-        super(nombre,raza,tipo_alimento, edad,sexo);
-        this.num_vidas =num_vidas;
+        super(nombre, raza, tipo_alimento, edad);
+        this.num_vidas = num_vidas;
+
     }
-    public int getnum_vidas(){
+    public int getNum_vidas(){
         return num_vidas;
     }
+
     //enviar
-    public void setnum_vidas(int num_vidas){
+    public void setNum_vidas( int num_vidas){
         this.num_vidas = num_vidas;
     }
 
     //metodo para mostrar la informacion del perro
-    public void mostrargato(){
-        System.out.println("El nombre del perro es: " +getnombre()+"\n"
-                            +"Su raza es: " +getraza ()+"\n"
-                            +"Se alimenta de: " +gettipo_alimento()+"\n"
-                            +"Tiene la edad de: " +getedad()+"\n"
-                            +"Su sexo es: " +getsexo()+"\n"
-                            +"Su ladrido es" + num_vidas +"\n");
-
+    public void mostrarGato(){
+        System.out.println("El nombre del michi es: " + getNombre() +"\n"
+                            + "Su raza es: " + getRaza() +"\n"
+                            + "Se alimenta de: " + getTipo_alimento() +"\n"
+                            + "Tiene la edad de: " + getEdad() +"\n"
+                            //+ "Su sexo es: " + getSexo() +"\n"
+                            + "Su numero de vidas es: " + num_vidas  +"\n");
     }
 }

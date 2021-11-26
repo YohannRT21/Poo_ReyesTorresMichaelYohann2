@@ -11,22 +11,15 @@ import javax.swing.JOptionPane;
 
 public class Principal{
 
-
+    
     int choice;
         String text_menu;
         
         
 
     public static void main(String[] args){
-        
-        try{
-            libro drama = new libro("titulo yohann", "autor rey", "ISBN 123", "Genero drama", "3", "50");
-        }catch(Exception e){
-            libro.mostrarlibro();
-        }
         String text;
         int opciones=0;
-
 
     /*
     Vamos a visualizar en una interfaz pequeña las opciones del menu
@@ -79,11 +72,11 @@ public class Principal{
                 break;
 
             case 2:
-                //metodo
                 break;
             
             case 3:
-                //metodo
+                Biblioteca obj = new Biblioteca ();
+                obj.Libros();
                 break;
         
             default:

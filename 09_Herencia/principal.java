@@ -1,16 +1,25 @@
-public class principal {
-     public static void main(String[] args){
-
-        //Gracias al constructor para hacer las instancias de las clases
-        perro dog = new perro("Pulgas", "de la calle", "croquetas dogcaut", 1, 0, "hace guau guau");
-        gato cat = new gato("Michi", "de colores", "Wiscas", 2, 0, "hace miau miau");
 
 
-        //vamos a mostrar los datos del gato y del perro
 
-        dog.mostrarperro();
-        cat.mostrargato();
+public class Principal{
+
+
+    public static void main(String[] args){
+
+        //gracias al constructor poder hacer las instancias de las clases
+        Perro dog = new Perro("pulgas", "de la calle", "Croquetas dogcaut", 1, "hace guau guau" );
+        Gato cat = new Gato("Michi", "de colores", "wiscas", 2, 7);
+
+
+        //vamos a mostrar los datos del perro y del gato
+        dog.mostrarPerro();
+        cat.mostrarGato();
+
+        /*
+        Quiero que se imprima el sexo de los animales
+        Quiero que agreguen la clase hamster
+        quiero una clase mas de otro animal domestico
+        
+        */ 
     }
-    
-    
 }
