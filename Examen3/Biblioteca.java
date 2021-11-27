@@ -30,6 +30,9 @@ public class Biblioteca<libro>{
 
     public void Libros(){
 
+        libros obj = new libros ();
+        obj.tipo(); 
+
 
         //menu para el prestamo del libro
 
@@ -49,13 +52,13 @@ public class Biblioteca<libro>{
             case 1:
 
                 Prestamo();
-                
+                libro obj = libro ();
+                obj. libro();
                 break;
 
             case 2:
 
                 Devolucion();
-
 
                 break;
             default:
@@ -106,4 +109,5 @@ public class Biblioteca<libro>{
     public void Biblioteca() {
     }
 }
+
 

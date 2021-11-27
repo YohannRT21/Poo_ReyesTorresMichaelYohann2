@@ -1,4 +1,4 @@
-public class drama extends libro {
+public class drama extends mostrarlibros {
 
     public void mostrarlibro(){
         System.out.println("Titulo: " + getTitulo() +"\n"

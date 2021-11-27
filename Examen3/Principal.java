@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class Principal{
 
-    
+
     int choice;
         String text_menu;
         
@@ -72,18 +72,17 @@ public class Principal{
                 break;
 
             case 2:
+                //metodo
                 break;
             
             case 3:
-                Biblioteca obj = new Biblioteca ();
-                obj.Libros();
+                //metodo
                 break;
         
             default:
                 JOptionPane.showMessageDialog(null, "Vuelva pronto");
                 break;
         }
-        
     }
 
     
