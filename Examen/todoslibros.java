@@ -1,3 +1,4 @@
+//Yohann
 public class todoslibros{
     String titulo; 
     String autor; 
@@ -81,7 +82,7 @@ public class todoslibros{
     public double getTotal(){
         return total;
     }
-
+    int prestados;
     public boolean prestamo(){
         boolean prestado = true;
         if(prestados<ejemplares){
@@ -131,9 +132,6 @@ public static void main(String[] args){
     Libro libro1 = new Libro("El quijote", "Cervantes","12fhd", "Drama", 2, 100.00 ,200.0);
     //se crea el objeto libro2 utilizando el constructor por defecto
     Libro libro2 = new Libro("Yohann","Reyes", "asfd23", "Terror", 3, 12,34);
-
-    libro1.mostrarlibros();
-    libro2.mostrarlibros();
 
     System.out.print("Introduce titulo: ");
     titulo = sc.nextLine();
