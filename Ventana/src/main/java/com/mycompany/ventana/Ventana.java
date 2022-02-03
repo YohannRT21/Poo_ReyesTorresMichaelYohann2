@@ -120,16 +120,16 @@ public class Ventana extends JFrame {
                 loginbuttonActionPerformed(evt);
             }
             private void loginbuttonActionPerformed(ActionEvent evt) {
-                String [] Usuarios = {"Yohann", "Jean"};
-                String [] Contraseñas = new String [2];
-                Contraseñas[0]= "Y123";//clave Yohann
-                Contraseñas[1]= "J1";//Clave Jean
-                String Usuario1=usertext.getText();
-                String Contraseña1=passtext.getText();
-                boolean mensaje =false;
-                for (int i = 0; i < Usuarios.length; i++){
-                    if(Usuarios[i].equals(Usuario1)&& Contraseñas[i].equals(Contraseña1)){
-                        mensaje = true;
+                    String [] Usuarios = {"Yohann", "Jean"};
+                    String [] Contraseñas = new String [2];
+                    Contraseñas[0]= "Y123";//clave Yohann
+                    Contraseñas[1]= "J1";//Clave Jean
+                    String Usuario1=usertext.getText();
+                    String Contraseña1=passtext.getText();
+                    boolean mensaje =false;
+                    for (int i = 0; i < Usuarios.length; i++){
+                        if(Usuarios[i].equals(Usuario1)&& Contraseñas[i].equals(Contraseña1)){
+                            mensaje = true;
                     } 
                 }
                 if(mensaje){
